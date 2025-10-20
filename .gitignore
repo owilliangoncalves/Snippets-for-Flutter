@@ -5,3 +5,4 @@ vsc-extension-quickstart.md
 *.
 .husky
 .vscode
+.vscodeignore
