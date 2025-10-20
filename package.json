@@ -1,0 +1,32 @@
+{
+  "name": "snippets-for-flutter",
+  "displayName": "Snippets for Flutter",
+  "description": "Snippets for Flutter provides a set of clean, reusable code templates designed to help you build Flutter apps faster and more efficiently.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.105.0"
+  },
+  "scripts": {
+    "release": "standard-version"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "dart",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  },
+  "devDependencies": {
+    "standard-version": "^9.5.0"
+  },
+  "config": {
+    "path": "./node_modules/cz-conventional-changelog"
+  },
+  "dependencies": {
+    "vsce": "^2.15.0"
+  }
+}

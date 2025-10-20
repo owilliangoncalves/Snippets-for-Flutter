@@ -1,0 +1,118 @@
+{
+    "Stateless Widgets Without Adaptative Scaffold": {
+        "prefix": "fstless",
+        "description": "StatelessWidget Without Adaptative Scaffold",
+        "body": [
+            "class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/} extends StatelessWidget {",
+            "\tconst ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}({super.key});",
+            "",
+            "\t@override",
+            "\tWidget build(BuildContext context){",
+            "\t\treturn Scaffold(",
+            "\t\t\t$0",
+            "\t\t);",
+            "\t}",
+            "}"
+        ]
+    },
+    "Stateless Widgets With Adaptative Scaffold": {
+        "prefix": "fastless",
+        "description": "StatelessWidget With Adaptative Scaffold",
+        "body": [
+            "class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/} extends StatelessWidget {",
+            "\tconst ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}({super.key});",
+            "",
+            "\t@override",
+            "\tWidget build(BuildContext context){",
+            "\t\treturn AdaptativeScaffold(",
+            "\t\t\t$0",
+            "\t\t);",
+            "\t}",
+            "}"
+        ]
+    },
+    "Stateful Widget Without Private State and Without Adaptative Scaffold": {
+        "prefix": "fstful",
+        "description": "Stateful Widget Without Private State and Without Adaptative Scaffold",
+        "body": [
+            "class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/} extends StatefulWidget {",
+            "\tconst ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}({ super.key });",
+            "",
+            "\t@override",
+            "\tState<${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}> createState() => ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}State();",
+            "}",
+            "",
+            "class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}State extends State<${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}> {",
+            "\t@override",
+            "\tWidget build(BuildContext context) {",
+            "\t\treturn Scaffold(",
+            "\t\t\t$0",
+            "\t\t);",
+            "\t}",
+            "}"
+        ]
+    },
+    "Stateful Widget Without Private State and With Adaptative Scaffold": {
+        "prefix": "fastful",
+        "description": "Stateful Widget Without Private State and With Adaptative Scaffold",
+        "body": [
+            "class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/} extends StatefulWidget {",
+            "\tconst ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}({ super.key });",
+            "",
+            "\t@override",
+            "\tState<${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}> createState() => ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}State();",
+            "}",
+            "",
+            "class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}State extends State<${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}> {",
+            "\t@override",
+            "\tWidget build(BuildContext context) {",
+            "\t\treturn AdaptativeScaffold(",
+            "\t\t\t$0",
+            "\t\t);",
+            "\t}",
+            "}"
+        ]
+    },
+    "Stateful Widget With Private State and Adaptative Scaffold": {
+        "prefix": "fpastful",
+        "description": "Stateful Widget With Private State and Adaptative Scaffold",
+        "body": [
+            "class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/} extends StatefulWidget {",
+            "\tconst ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}({ super.key });",
+            "",
+            "\t@override",
+            "\tState<${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}> createState() => _${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}State();",
+            "}",
+            "",
+            "class _${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}State extends State<${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}> {",
+            "\t@override",
+            "\tWidget build(BuildContext context) {",
+            "\t\treturn AdaptativeScaffold(",
+            "\t\t\t$0",
+            "\t\t);",
+            "\t}",
+            "}"
+        ]
+    },
+    "Stateful Widget With Private State and Without Adaptative Scaffold": {
+        "prefix": "fpstful",
+        "description": "Stateful Widget With Private State and Without Adaptative Scaffold",
+        "body": [
+            "class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/} extends StatefulWidget {",
+            "\tconst ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}({ super.key });",
+            "",
+            "\t@override",
+            "\tState<${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}> createState() => _${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}State();",
+            "}",
+            "",
+            "class _${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}State extends State<${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}> {",
+            "\t@override",
+            "\tWidget build(BuildContext context) {",
+            "\t\treturn Scaffold(",
+            "\t\t\t$0",
+            "\t\t);",
+            "\t}",
+            "}"
+        ]
+    }
+}
