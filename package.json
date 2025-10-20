@@ -2,6 +2,7 @@
   "name": "snippets-for-flutter",
   "displayName": "Snippets for Flutter",
   "description": "Snippets for Flutter provides a set of clean, reusable code templates designed to help you build Flutter apps faster and more efficiently.",
+  "publisher": "WillianGoncalves",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.105.0"
